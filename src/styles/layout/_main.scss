@@ -1,0 +1,96 @@
+.rating {
+    background-color: var(--dark-blue);
+    margin-inline: auto;
+    max-width: 420px;
+    height: 390px;
+    border-radius: var(--edges);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 40px;
+
+    &__fav-star {
+        background-color: var(--middle-blue);
+        padding: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    &__textarea h1 {
+        color: var(--white);
+        font-size: 32px;
+        margin-bottom: 0.5rem;
+    }
+
+    &__textarea p {
+        color: var(--medium-grey);
+    }
+
+    &__btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__style {
+            background-color: var(--middle-blue);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: var(--medium-grey);
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: var(--primary-color);
+                color: var(--white);
+            }
+        }
+    }
+
+    &__submit-btn {
+        width: 100%;
+        margin-top: 1rem;
+        
+        button {
+            width: 100%;
+
+            font-size: 14px;
+            align-items: center;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: var(--edges);
+            text-transform: uppercase;
+            color: var(--white);
+            letter-spacing: 0.2em;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+                box-shadow: 0 0 20px rgba(155, 155, 155, 0.25);
+            }
+
+            &:active {
+                background-color: var(--white);
+                color: var(--primary-color);
+            }
+
+            a {
+                display: block;
+                padding: 14px;
+            }
+        }
+    }
+}
+
+.active {
+    background-color: var(--medium-grey);
+    color: var(--white);
+}

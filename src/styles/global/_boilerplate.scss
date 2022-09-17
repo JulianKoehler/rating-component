@@ -1,0 +1,27 @@
+@use '../util/' as u;
+
+:root {
+    --edges: 24px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--very-dark-blue);
+    font-family: u.$main-font;
+  }
